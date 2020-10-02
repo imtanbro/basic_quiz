@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
         //   child: Text("My default Text",
         //   style: TextStyle(
         //     color: Colors.white,
-        //     fontSize: 25),),
+        //    / fontSize: 25),),
         // ),
 
         body: Padding(
