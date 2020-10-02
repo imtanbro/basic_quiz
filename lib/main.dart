@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
                     child: Text("The Questions!",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20
+                      fontSize: 30
                       ),
                     ),
                   ),
