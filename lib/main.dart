@@ -21,6 +21,12 @@ void main() {
 class MyApp extends StatelessWidget {
   //important anotaion... it is so called decorator
 
+
+
+  void answerQuestion() {
+    print('Answer Chosen!')
+  }
+
   @override
 //extends informs dart that this calss willl be based on some other class
 //and we can extext only 1 class at a time
@@ -71,7 +77,9 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 20, 
                   ),),
-                  onPressed: null,),
+                  onPressed: answerQuestion(),),
+                  
+//onPressed: answerQuestion().... this returns the value of the fuction which is null ie. it returns nothing
 
                   RaisedButton(child: Text("Answer 2",
                   style: TextStyle(
