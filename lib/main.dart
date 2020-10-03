@@ -4,7 +4,6 @@ void main() {
   runApp(MyApp());
 }
 
-
 //trying to write a function
 
 // stylingSub(String name){
@@ -15,26 +14,24 @@ void main() {
 //     ),);
 // }
 
-
-
-
 class MyApp extends StatelessWidget {
   //important anotaion... it is so called decorator
 
-
+  var index = 0;
 
   void answerQuestion() {
-    print('Answer Chosen!')
+    index++;
+    print(index);
   }
 
   @override
 //extends informs dart that this calss willl be based on some other class
 //and we can extext only 1 class at a time
   Widget build(BuildContext context) {
-    
     var questions = [
       'What\'s your favourite color?',
       'What\'s your favourite animal?',
+      'What\'s your favourite food'
     ];
 
     return MaterialApp(
@@ -61,49 +58,66 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 //[] dinots takes in list.
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 50),
-                    child: Text("The Questions!",
+
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 50),
+                  child: Text(
+                    (questions[index]),
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ),
+
+                RaisedButton(
+                  child: Text(
+                    "Answer 1",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20
-                      ),
+                      fontSize: 20,
                     ),
                   ),
+                  onPressed: answerQuestion,
+                ),
 
-                  RaisedButton(child: Text("Answer 1",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20, 
-                  ),),
-                  onPressed: answerQuestion(),),
-                  
 //onPressed: answerQuestion().... this returns the value of the fuction which is null ie. it returns nothing
 
-                  RaisedButton(child: Text("Answer 2",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20, 
-                  ),),
-                  onPressed: null,),
-
-                  RaisedButton(child: Text("Answer 3",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20, 
-                  ),),
-                  onPressed: null,
+                RaisedButton(
+                  child: Text(
+                    "Answer 2",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
+                  onPressed: answerQuestion,
 
-                  RaisedButton(child: Text("Answer 4",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20, 
-                  ),),
-                  onPressed: null,),
+                  //if incase you want to pass a unique function to each button then.
+                  //onPressed: () => print("Hey"),
+                ),
 
+                RaisedButton(
+                  child: Text(
+                    "Answer 3",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
+                  onPressed: () {
+                    print("Answer 3 answered");
+                  },
+                ),
 
+                RaisedButton(
+                  child: Text(
+                    "Answer 4",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
+                  onPressed: answerQuestion,
+//this acts as a pointer
+                ),
               ],
             ),
           ),
