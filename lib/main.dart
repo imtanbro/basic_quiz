@@ -14,13 +14,23 @@ void main() {
 //     ),);
 // }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp> {
   //important anotaion... it is so called decorator
 
   var index = 0;
 
   void answerQuestion() {
-    index++;
+    setState(() {
+      index++;
+    });
+    // index++;
     print(index);
   }
 
