@@ -36,7 +36,7 @@ class MyAppState extends State<MyApp> {
 
   @override
 //extends informs dart that this calss willl be based on some other class
-//and we can extext only 1 class at a time
+//and we can extext only 1 class at a time8
   Widget build(BuildContext context) {
     var questions = [
       'What\'s your favourite color?',
