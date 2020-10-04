@@ -12,7 +12,7 @@ class Question extends StatelessWidget {
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        // color: LinearGradient(colors: Colors.accents),13
+        // color: LinearGradient(colors: Colors.accents),
       ),
       child: Text(
         questionText,
