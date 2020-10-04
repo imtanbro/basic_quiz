@@ -1,3 +1,4 @@
+import 'package:basic_quiz/question.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,7 +43,8 @@ class _MyAppState extends State<MyApp> {
     var questions = [
       'What\'s your favourite color?',
       'What\'s your favourite animal?',
-      'What\'s your favourite food'
+      'What\'s your favourite food?',
+      'What\'s your favourite drink?'
     ];
 
     return MaterialApp(
@@ -72,10 +74,7 @@ class _MyAppState extends State<MyApp> {
 
                 Padding(
                   padding: const EdgeInsets.only(bottom: 50),
-                  child: Text(
-                    (questions[_index]),
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
+                  child: Question(questions[_index % questions.length])
                 ),
 
                 RaisedButton(
@@ -113,9 +112,10 @@ class _MyAppState extends State<MyApp> {
                       fontSize: 20,
                     ),
                   ),
-                  onPressed: () {
-                    print("Answer 3 answered");
-                  },
+                  // onPressed: () {
+                  //   print("Answer 3 answered");
+                  // },
+                  onPressed: _answerQuestion,
                 ),
 
                 RaisedButton(
