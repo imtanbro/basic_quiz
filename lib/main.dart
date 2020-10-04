@@ -52,8 +52,13 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(255, 255, 255, 0.1),
           title: Text(
-            "My First App",
-            style: TextStyle(color: Colors.yellowAccent),
+            "Quiz",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              letterSpacing: 10,
+              color: Colors.yellowAccent,
+              fontSize: 28,
+            ),
           ),
         ),
 
@@ -73,9 +78,8 @@ class _MyAppState extends State<MyApp> {
                 //[] dinots takes in list.
 
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 50),
-                  child: Question(questions[_index % questions.length])
-                ),
+                    padding: const EdgeInsets.only(bottom: 50),
+                    child: Question(questions[_index % questions.length])),
 
                 RaisedButton(
                   child: Text(
