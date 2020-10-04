@@ -17,21 +17,22 @@ void main() {
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return MyAppState();
+    return _MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> {
   //important anotaion... it is so called decorator
 
-  var index = 0;
+  var _index = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
-      index++;
+      //changes state and rebuilds the build method.
+      _index++;
     });
     // index++;
-    print(index);
+    print(_index);
   }
 
   @override
@@ -72,7 +73,7 @@ class MyAppState extends State<MyApp> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 50),
                   child: Text(
-                    (questions[index]),
+                    (questions[_index]),
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ),
@@ -85,7 +86,7 @@ class MyAppState extends State<MyApp> {
                       fontSize: 20,
                     ),
                   ),
-                  onPressed: answerQuestion,
+                  onPressed: _answerQuestion,
                 ),
 
 //onPressed: answerQuestion().... this returns the value of the fuction which is null ie. it returns nothing
@@ -98,7 +99,7 @@ class MyAppState extends State<MyApp> {
                       fontSize: 20,
                     ),
                   ),
-                  onPressed: answerQuestion,
+                  onPressed: _answerQuestion,
 
                   //if incase you want to pass a unique function to each button then.
                   //onPressed: () => print("Hey"),
@@ -125,7 +126,7 @@ class MyAppState extends State<MyApp> {
                       fontSize: 20,
                     ),
                   ),
-                  onPressed: answerQuestion,
+                  onPressed: _answerQuestion,
 //this acts as a pointer
                 ),
               ],
