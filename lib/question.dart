@@ -9,6 +9,11 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      margin: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        // color: LinearGradient(colors: Colors.accents),
+      ),
       child: Text(
         questionText,
         style: TextStyle(color: Colors.white, fontSize: 20),
@@ -19,7 +24,6 @@ class Question extends StatelessWidget {
 }
 
 class App extends StatelessWidget {
-  
   final String titlenav;
   App(this.titlenav);
 
