@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
         //     ),
         //   ),
         // ),
-        appBar: App("Quiz"),
+        appBar: NavbarCustom("Quiz"),
 
         backgroundColor: Colors.black12,
         // body: Center(

@@ -14,10 +14,9 @@ class Question extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Colors.blue,Colors.black]
-          ),
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Colors.blue, Colors.black]),
       ),
       child: Text(
         questionText,
@@ -28,11 +27,17 @@ class Question extends StatelessWidget {
   }
 }
 
-class App implements AppBar {
-  final String titlenav;
-  App(this.titlenav);
-
+class NavbarCustom extends StatelessWidget with PreferredSizeWidget {
   @override
+  final Size preferredSize;
+  final String titlenav;
+
+  NavbarCustom(
+    this.titlenav, {
+    Key key,
+  })  : preferredSize = Size.fromHeight(60),
+        super(key: key);
+
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Color.fromRGBO(255, 255, 255, 0.1),
@@ -41,6 +46,7 @@ class App implements AppBar {
         style: TextStyle(
           color: Colors.yellowAccent,
           fontSize: 28,
+          letterSpacing: 10,
         ),
       ),
     );
