@@ -9,10 +9,15 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      height: 250,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        // color: LinearGradient(colors: Colors.accents),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.blue,Colors.black]
+          ),
       ),
       child: Text(
         questionText,
