@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.black12,
         // body: Center(
         //   child: Text("My default Text",
-        //   style: TextStyle(6
+        //   style: TextStyle(5
         //     color: Colors.white,
         //     fontSize: 25),),
         // ),
