@@ -71,14 +71,14 @@ class _MyAppState extends State<MyApp> {
         // ),
 
         body: Padding(
-          padding: const EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.only(top: 50),
           child: Center(
             child: Column(
               children: [
                 //[] dinots takes in list.
 
                 Padding(
-                    padding: const EdgeInsets.only(bottom: 50),
+                    padding: const EdgeInsets.only(bottom: 40),
                     child: Question(questions[_index % questions.length])),
 
                 RaisedButton(
