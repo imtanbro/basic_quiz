@@ -28,7 +28,7 @@ class Question extends StatelessWidget {
   }
 }
 
-class App extends StatelessWidget {
+class App implements AppBar {
   final String titlenav;
   App(this.titlenav);
 

@@ -49,18 +49,19 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromRGBO(255, 255, 255, 0.1),
-          title: Text(
-            "Quiz",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              letterSpacing: 10,
-              color: Colors.yellowAccent,
-              fontSize: 28,
-            ),
-          ),
-        ),
+        // appBar: AppBar(
+        //   backgroundColor: Color.fromRGBO(255, 255, 255, 0.1),
+        //   title: Text(
+        //     "Quiz",
+        //     style: TextStyle(
+        //       fontWeight: FontWeight.bold,
+        //       letterSpacing: 10,
+        //       color: Colors.yellowAccent,
+        //       fontSize: 28,
+        //     ),
+        //   ),
+        // ),
+        appBar: App("Quiz"),
 
         backgroundColor: Colors.black12,
         // body: Center(
