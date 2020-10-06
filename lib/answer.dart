@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
+  final String answer;
+  
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,22 +19,20 @@ class Answer extends StatelessWidget {
             color: Colors.white70,
             width: 1,
           ),
-          ),
+        ),
         child: RaisedButton(
-          
           child: Text(
-              "Answer is this do you undestand, I am trying to say spmething Will",
-              textAlign: TextAlign.start,
-                 style: TextStyle(
-                 color: Colors.white,
-                 fontSize: 15,
-                 
-               ),
-              ),
+            "Answer is this do you undestand, I am trying to say spmething Will",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+            ),
+          ),
           onPressed: null,
           //if incase you want to pass a unique function to each button then.
           //onPressed: () => print("Hey"),
-        ),    
+        ),
       ),
     );
   }
