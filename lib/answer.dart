@@ -22,7 +22,7 @@ class Answer extends StatelessWidget {
         ),
         child: RaisedButton(
           child: Text(
-            "Answer is this do you undestand, I am trying to say spmething Will",
+            answer,
             textAlign: TextAlign.start,
             style: TextStyle(
               color: Colors.white,
