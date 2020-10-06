@@ -1,3 +1,4 @@
+import 'package:basic_quiz/answer.dart';
 import 'package:basic_quiz/question.dart';
 import 'package:flutter/material.dart';
 
@@ -72,73 +73,79 @@ class _MyAppState extends State<MyApp> {
         // ),
 
         body: Padding(
-          padding: const EdgeInsets.only(top: 50),
-          child: Center(
-            child: Column(
-              children: [
-                //[] dinots takes in list.
+          padding: const EdgeInsets.only(top: 40),
+            child: SingleChildScrollView(
+                          child: Column(
+                children: [
+                  //[] dinots takes in list.
 
-                Padding(
-                    padding: const EdgeInsets.only(bottom: 40),
-                    child: Question(questions[_index % questions.length])),
+                  Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Question(questions[_index % questions.length])),
 
-                RaisedButton(
-                  child: Text(
-                    "Answer 1",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                  onPressed: _answerQuestion,
-                ),
+//                 RaisedButton(
+//                   child: Text(
+//                     "Answer 1",
+//                     style: TextStyle(
+//                       color: Colors.white,
+//                       fontSize: 20,
+//                     ),
+//                   ),
+//                   onPressed: _answerQuestion,
+//                 ),
 
-//onPressed: answerQuestion().... this returns the value of the fuction which is null ie. it returns nothing
+// //onPressed: answerQuestion().... this returns the value of the fuction which is null ie. it returns nothing
 
-                RaisedButton(
-                  child: Text(
-                    "Answer 2",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                  onPressed: _answerQuestion,
+//                 RaisedButton(
+//                   child: Text(
+//                     "Answer 2",
+//                     style: TextStyle(
+//                       color: Colors.white,
+//                       fontSize: 20,
+//                     ),
+//                   ),
+//                   onPressed: _answerQuestion,
 
-                  //if incase you want to pass a unique function to each button then.
-                  //onPressed: () => print("Hey"),
-                ),
+//                   //if incase you want to pass a unique function to each button then.
+//                   //onPressed: () => print("Hey"),
+//                 ),
 
-                RaisedButton(
-                  child: Text(
-                    "Answer 3",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                  // onPressed: () {
-                  //   print("Answer 3 answered");
-                  // },
-                  onPressed: _answerQuestion,
-                ),
+//                 RaisedButton(
+//                   child: Text(
+//                     "Answer 3",
+//                     style: TextStyle(
+//                       color: Colors.white,
+//                       fontSize: 20,
+//                     ),
+//                   ),
+//                   // onPressed: () {
+//                   //   print("Answer 3 answered");
+//                   // },
+//                   onPressed: _answerQuestion,
+//                 ),
 
-                RaisedButton(
-                  child: Text(
-                    "Answer 4",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                  onPressed: _answerQuestion,
-//this acts as a pointer
-                ),
-              ],
+//                 RaisedButton(
+//                   child: Text(
+//                     "Answer 4",
+//                     style: TextStyle(
+//                       color: Colors.white,
+//                       fontSize: 20,
+//                     ),
+//                   ),
+//                   onPressed: _answerQuestion,
+// //this acts as a pointer
+//                 ),
+
+
+                  Answer(),
+                  Answer(),
+                  Answer(),
+                  Answer(),
+                ],
+              ),
             ),
           ),
         ),
-      ),
     );
   } //build is a method
 }

@@ -9,8 +9,8 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 250,
-      margin: EdgeInsets.all(10),
+      height: 220,
+      margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         gradient: LinearGradient(
@@ -20,7 +20,7 @@ class Question extends StatelessWidget {
       ),
       child: Text(
         questionText,
-        style: TextStyle(color: Colors.white, fontSize: 20),
+        style: TextStyle(color: Colors.white, fontSize: 18),
       ),
       alignment: Alignment.center,
     );
