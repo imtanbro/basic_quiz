@@ -19,7 +19,6 @@ class Answer extends StatelessWidget {
                     ),
                   ),
                   onPressed: null,
-
                   //if incase you want to pass a unique function to each button then.
                   //onPressed: () => print("Hey"),
                 ),
