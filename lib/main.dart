@@ -133,7 +133,7 @@ class _MyAppState extends State<MyApp> {
 //                     ),
 //                   ),
 //                   onPressed: _answerQuestion,
-// //this acts as a pointer.
+// //this acts as a pointer
 //                 ),
 
 
