@@ -12,7 +12,7 @@ void main() {
 //     Text("$name",
 //     style: TextStyle(
 //         color: Colors.white,
-//         fontSize: 20.
+//         fontSize: 20
 //     ),);
 // }
 
