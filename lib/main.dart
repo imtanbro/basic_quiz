@@ -24,7 +24,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  //important anotaion... it is so called decorator
+  //important anotaion... it is so called decorator.
 
   var _index = 0;
 
