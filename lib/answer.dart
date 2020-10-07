@@ -23,7 +23,7 @@ class Answer extends StatelessWidget {
         child: RaisedButton(
           child: Text(
             answer,
-            textAlign: TextAlign.start,
+            textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.white,
               fontSize: 15,

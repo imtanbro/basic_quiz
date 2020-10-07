@@ -140,7 +140,7 @@ class _MyAppState extends State<MyApp> {
                   Answer("Answer 1"),
                   Answer("Answer 2"),
                   Answer("Answer 3"),
-                  Answer("Answer"),
+                  Answer("Answer is so"),
                 ],
               ),
             ),
