@@ -47,7 +47,6 @@ class _MyAppState extends State<MyApp> {
       'What\'s your favourite food?',
       'What\'s your favourite drink?',
       'What\'s your favourite place?'
-
     ];
 
     return MaterialApp(
@@ -76,14 +75,14 @@ class _MyAppState extends State<MyApp> {
 
         body: Padding(
           padding: const EdgeInsets.only(top: 40),
-            child: SingleChildScrollView(
-                          child: Column(
-                children: [
-                  //[] dinots takes in list.
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                //[] dinots takes in list.
 
-                  Padding(
-                      padding: const EdgeInsets.only(bottom: 20),
-                      child: Question(questions[_index % questions.length])),
+                Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Question(questions[_index % questions.length])),
 
 //                 RaisedButton(
 //                   child: Text(
@@ -138,16 +137,15 @@ class _MyAppState extends State<MyApp> {
 // //this acts as a pointer
 //                 ),
 
-
-                  Answer("Answer 1"),
-                  Answer("Answer 2"),
-                  Answer("Answer"),
-                  Answer("Answer is so"),
-                ],
-              ),
+                Answer("Answer 1"),
+                Answer("Answer 2"),
+                Answer("Answer"),
+                Answer("Answer is so"),
+              ],
             ),
           ),
         ),
+      ),
     );
   } //build is a method
 }
