@@ -45,7 +45,9 @@ class _MyAppState extends State<MyApp> {
       'What\'s your favourite color?',
       'What\'s your favourite animal?',
       'What\'s your favourite food?',
-      'What\'s your favourite drink?'
+      'What\'s your favourite drink?',
+      'What\'s your favourite place?'
+
     ];
 
     return MaterialApp(
