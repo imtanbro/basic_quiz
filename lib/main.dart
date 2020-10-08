@@ -42,11 +42,26 @@ class _MyAppState extends State<MyApp> {
 //and we can extext only 1 class at a time
   Widget build(BuildContext context) {
     var questions = [
-      'What\'s your favourite color?',
-      'What\'s your favourite animal?',
-      'What\'s your favourite food?',
-      'What\'s your favourite drink?',
-      'What\'s your favourite place?'
+      {
+        "questiontext": 'What\'s your favourite color?',
+        'answers': ['Black', 'Red', 'Green', 'Yellow']
+      },
+      {
+        "questiontext": 'What\'s your favourite food?',
+        'answers': ['Black', 'Red', 'Green', 'Yellow']
+      },
+      {
+        "questiontext": 'What\'s your favourite animal?',
+        'answers': ['Black', 'Red', 'Green', 'Yellow']
+      },
+      {
+        "questiontext": 'What\'s your favourite drink?',
+        'answers': ['Black', 'Red', 'Green', 'Yellow']
+      },
+      {
+        "questiontext": 'What\'s your favourite place?',
+        'answers': ['Black', 'Red', 'Green', 'Yellow']
+      }
     ];
 
     return MaterialApp(
