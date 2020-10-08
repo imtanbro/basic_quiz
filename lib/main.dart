@@ -152,10 +152,19 @@ class _MyAppState extends State<MyApp> {
 // //this acts as a pointer
 //                 ),
 
-                Answer("Answer 1", _answerQuestion),
-                Answer("Answer 2", _answerQuestion),
-                Answer("Answer", _answerQuestion),
-                Answer("Answer is so", _answerQuestion),
+                // Answer("Answer 1", _answerQuestion),
+                // Answer("Answer 2", _answerQuestion),
+                // Answer("Answer", _answerQuestion),
+                // Answer("Answer is so", _answerQuestion),
+
+                questions.map((Question) {
+                  return Answer(Question);
+                }
+                
+                );
+
+
+
               ],
             ),
           ),
