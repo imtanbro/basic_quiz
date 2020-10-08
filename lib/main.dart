@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
       _index++;
     });
     // index++;
-    print(_index);
+    // print(_index);
   }
 
   @override

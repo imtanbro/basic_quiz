@@ -22,6 +22,7 @@ class Answer extends StatelessWidget {
           ),
         ),
         child: RaisedButton(
+          color: Colors.transparent,
           child: Text(
             answer,
             textAlign: TextAlign.left,
