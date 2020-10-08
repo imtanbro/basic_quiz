@@ -159,9 +159,7 @@ class _MyAppState extends State<MyApp> {
 
                 (questions[_index]['answers'] as List<String>).map((answer) {
                   return Answer(answer, _answerQuestion);
-                })
-
-
+                }).toList()
 
               ],
             ),
