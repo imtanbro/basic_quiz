@@ -48,19 +48,19 @@ class _MyAppState extends State<MyApp> {
       },
       {
         "questiontext": 'What\'s your favourite food?',
-        'answers': ['Black', 'Red', 'Green', 'Yellow']
+        'answers': ['Pav Bhaji', 'Usal', 'Pizza', 'Thalipit']
       },
       {
         "questiontext": 'What\'s your favourite animal?',
-        'answers': ['Black', 'Red', 'Green', 'Yellow']
+        'answers': ['Tanmay', 'Shraddha', 'Cat', 'Dog']
       },
       {
         "questiontext": 'What\'s your favourite drink?',
-        'answers': ['Black', 'Red', 'Green', 'Yellow']
+        'answers': ['Tea', 'Water', 'Lemonade', 'Daru']
       },
       {
         "questiontext": 'What\'s your favourite place?',
-        'answers': ['Black', 'Red', 'Green', 'Yellow']
+        'answers': ['Home', 'Ashram', 'Ozar', 'Leh']
       }
     ];
 
@@ -97,7 +97,7 @@ class _MyAppState extends State<MyApp> {
 
                 Padding(
                     padding: const EdgeInsets.only(bottom: 20),
-                    child: Question(questions[_index % questions.length])),
+                    child: Question(questions[_index % questions.length]['questiontext'])),
 
 //                 RaisedButton(
 //                   child: Text(
