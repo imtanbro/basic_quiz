@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
   final String answer;
-  Answer(this.answer);
+  final Function _Onclickaction;
+  Answer(this.answer, this._Onclickaction);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,7 @@ class Answer extends StatelessWidget {
               fontSize: 15,
             ),
           ),
-          onPressed: null,
+          onPressed: _Onclickaction,
           //if incase you want to pass a unique function to each button then.
           //onPressed: () => print("Hey"),
         ),
