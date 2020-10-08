@@ -155,10 +155,10 @@ class _MyAppState extends State<MyApp> {
                 // Answer("Answer 1", _answerQuestion),
                 // Answer("Answer 2", _answerQuestion),
                 // Answer("Answer", _answerQuestion),
-                // Answer("Answer is so", _answerQuestion),
+                // Answer("Answer is so", _answerQuestion), 
 
                 (questions[_index]['answers'] as List<String>).map((answer) {
-                  return Answer(answer);
+                  return Answer(answer, _answerQuestion);
                 })
 
 
