@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
 //extends informs dart that this calss willl be based on some other class
 //and we can extext only 1 class at a time
   Widget build(BuildContext context) {
-    final questions = [//changed var questions to final questions
+    const questions = [//changed var questions to final questions
       {
         "questiontext": 'What\'s your favourite color?',
         'answers': ['Black', 'Red', 'Green', 'Yellow']
