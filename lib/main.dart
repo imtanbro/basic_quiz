@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
       },
       {
         "questiontext": 'What\'s your favourite food?',
-        'answers': ['Pav Bhaji', 'Usal', 'Pizza', 'Thalipit']
+        'answers': ['Pav Bhaji', 'Usal', 'Pizza']
       },
       {
         "questiontext": 'What\'s your favourite animal?',
