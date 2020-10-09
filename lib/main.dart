@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
 
   var _index = 0;
 
-  final questions = [//changed var questions to final questions
+  final questions = const [//changed var questions to final questions
       {
         "questiontext": 'What\'s your favourite color?',
         'answers': ['Black', 'Red', 'Green', 'Yellow']
