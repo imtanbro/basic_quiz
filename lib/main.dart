@@ -52,6 +52,8 @@ class _MyAppState extends State<MyApp> {
     ];
 
   void _answerQuestion() {
+    if()
+
     setState(() {
       //changes state and rebuilds the build method.
       _index++;
