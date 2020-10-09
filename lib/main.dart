@@ -28,46 +28,47 @@ class _MyAppState extends State<MyApp> {
 
   var _index = 0;
 
-  final questions = const [//changed var questions to final questions
-      {
-        "questiontext": 'What\'s your favourite color?',
-        'answers': ['Black', 'Red', 'Green', 'Yellow']
-      },
-      {
-        "questiontext": 'What\'s your favourite food?',
-        'answers': ['Pav Bhaji', 'Usal', 'Pizza']
-      },
-      {
-        "questiontext": 'What\'s your favourite animal?',
-        'answers': ['Tanmay', 'Shraddha', 'Cat', 'Dog']
-      },
-      {
-        "questiontext": 'What\'s your favourite drink?',
-        'answers': ['Tea', 'Water', 'Lemonade', 'Daru']
-      },
-      {
-        "questiontext": 'What\'s your favourite place?',
-        'answers': ['Home', 'Ashram', 'Ozar', 'Leh']
-      }
-    ];
+  final questions = const [
+    //changed var questions to final questions
+    {
+      "questiontext": 'What\'s your favourite color?',
+      'answers': ['Black', 'Red', 'Green', 'Yellow']
+    },
+    {
+      "questiontext": 'What\'s your favourite food?',
+      'answers': ['Pav Bhaji', 'Usal', 'Pizza']
+    },
+    {
+      "questiontext": 'What\'s your favourite animal?',
+      'answers': ['Tanmay', 'Shraddha', 'Cat', 'Dog']
+    },
+    {
+      "questiontext": 'What\'s your favourite drink?',
+      'answers': ['Tea', 'Water', 'Lemonade', 'Daru']
+    },
+    {
+      "questiontext": 'What\'s your favourite place?',
+      'answers': ['Home', 'Ashram', 'Ozar', 'Leh']
+    }
+  ];
 
   void _answerQuestion() {
-    if()
-
     setState(() {
       //changes state and rebuilds the build method.
       _index++;
     });
     // index++;
     // print(_index);
+
+    if (_index < questions.length) {
+      print("We have more questions");
+    }
   }
 
   @override
 //extends informs dart that this calss willl be based on some other class
 //and we can extext only 1 class at a time
   Widget build(BuildContext context) {
-    
-
 //final never indtend to change the value... we use final if u dont want to change when ur program runs
 
     return MaterialApp(
@@ -103,7 +104,8 @@ class _MyAppState extends State<MyApp> {
 
                 Padding(
                     padding: const EdgeInsets.only(bottom: 20),
-                    child: Question(questions[_index % questions.length]['questiontext'])),
+                    child: Question(
+                        questions[_index % questions.length]['questiontext'])),
 
 //                 RaisedButton(
 //                   child: Text(
@@ -157,16 +159,17 @@ class _MyAppState extends State<MyApp> {
 //                   onPressed: _answerQuestion,
 // //this acts as a pointer
 //                 ),
- 
+
                 // Answer("Answer 1", _answerQuestion),
                 // Answer("Answer 2", _answerQuestion),
                 // Answer("Answer", _answerQuestion),
-                // Answer("Answer is so", _answerQuestion), 
+                // Answer("Answer is so", _answerQuestion),
 
-                ...(questions[_index  % questions.length]['answers'] as List<String>).map((answer) {
+                ...(questions[_index % questions.length]['answers']
+                        as List<String>)
+                    .map((answer) {
                   return Answer(answer, _answerQuestion);
                 }).toList()
-
               ],
             ),
           ),
