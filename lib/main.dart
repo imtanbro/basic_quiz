@@ -28,20 +28,7 @@ class _MyAppState extends State<MyApp> {
 
   var _index = 0;
 
-  void _answerQuestion() {
-    setState(() {
-      //changes state and rebuilds the build method.
-      _index++;
-    });
-    // index++;
-    // print(_index);
-  }
-
-  @override
-//extends informs dart that this calss willl be based on some other class
-//and we can extext only 1 class at a time
-  Widget build(BuildContext context) {
-    const questions = [//changed var questions to final questions
+  final questions = [//changed var questions to final questions
       {
         "questiontext": 'What\'s your favourite color?',
         'answers': ['Black', 'Red', 'Green', 'Yellow']
@@ -63,6 +50,21 @@ class _MyAppState extends State<MyApp> {
         'answers': ['Home', 'Ashram', 'Ozar', 'Leh']
       }
     ];
+
+  void _answerQuestion() {
+    setState(() {
+      //changes state and rebuilds the build method.
+      _index++;
+    });
+    // index++;
+    // print(_index);
+  }
+
+  @override
+//extends informs dart that this calss willl be based on some other class
+//and we can extext only 1 class at a time
+  Widget build(BuildContext context) {
+    
 
 //final never indtend to change the value... we use final if u dont want to change when ur program runs
 
